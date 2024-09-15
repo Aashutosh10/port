@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(17, 17, 152);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(159, 153, 226);
+            font-size: 1.04rem;
+        }
+        .left {
+            font-size: 2rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+            position: relative; /* Position relative for absolute positioning of child */
+        } 
+        .rightSection img {
+            width: 100%;
+            height: auto; 
+            display: block;
+        }
+        .purple {
+            color: rgb(159, 79, 234);
+        }
+        #element {
+            color: rgb(159, 79, 234);
+        }
+        .extraSection {
+            text-align: center;
+            margin: 60px 0;
+        }
+        .extraSection a {
+            display: inline-block;
+            background-color: rgb(159, 79, 234);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+        .extraSection a:hover {
+            background-color: rgb(130, 62, 186);
+        }
+        .extraSection .resume {
+            background-color: rgb(17, 17, 152);
+        }
+        .extraSection .resume:hover {
+            background-color: rgb(13, 13, 128);
+        }
+        .about, .services, .projects, .contact {
+            text-align: center;
+            margin: 60px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .about h2, .services h2, .projects h2, .contact h2 {
+            margin-bottom: 20px;
+        }
+        .project-card {
+            background-color: rgb(17, 17, 152);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            line-height: 1.6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid rgb(159, 79, 234);
+            border-radius: 5px;
+            width: 80%;
+        }
+        button {
+            background-color: rgb(159, 79, 234);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(130, 62, 186);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aashutosh's Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Aashutosh</span>
+                <div>And I am a web developer.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="image.png" alt="Background Image">
+            </div>
+        </section>
+
+        <section class="extraSection">
+            <a href="https://github.com/Aashutosh10" target="_blank">Visit My GitHub</a>
+            <a href="path/to/your/resume.pdf" class="resume" download>Download Resume</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a recent graduate with a Bachelor’s degree in Computer Engineering. I have a passion for web development and design, and I'm excited to apply my skills in a professional setting. I'm dedicated to continuous learning and eager to take on new challenges.
+            </p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <p>
+                I offer a variety of services including:
+                <ul>
+                    <li>Web Development: Creating responsive and interactive websites.</li>
+                    <li>Graphic Design: Designing visuals for branding and marketing.</li>
+                    <li>Digital Marketing: Strategies to enhance online presence.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Waste Recyclers</h3>
+                <p>
+                    A project built with Flutter, PHP, and MySQL. It focuses on providing a platform for waste recycling, helping users to manage and track their recycling activities efficiently.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Hamro Mechanics</h3>
+                <p>
+                    A project developed with Python, Machine Learning, Bootstrap, HTML, CSS, PHP, and Laravel. This project involves creating a platform for mechanical services with intelligent features to enhance user experience.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Engineer', 'Web Developer', 'Graphics Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
